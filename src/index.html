@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.scss">
     <title>Document</title>
 </head>
 <body>
-    <h1>Ola mundo</h1>
+    <header class="hero">
+        <h1 class="hero__title">Feliz Aniversário!</h1>
+        <p class="hero__subtitle">Venha celebrar conosco</p>
+    </header>
+
+    <section class="event-details">
+        <div class="event-details__content">
+            <h2>Detalhes do Evento</h2>
+            <p>Data: 24 de agosto de 2023</p>
+            <p>Local: Localização do Evento</p>
+        </div>
+    </section>
+
+    <section class="event-details">
+        <div class="event-details__content">
+            <h2>Detalhes do Evento</h2>
+            <p>Data: 24 de agosto de 2023</p>
+            <p>Local: Localização do Evento</p>
+    
+            <!-- Adicione as imagens dos convidados especiais -->
+            <div class="guests">
+                <img src="../src/images/alok.svg" alt="Convidado Especial 1">
+                <img src="../src/images/gustavo-lima.svg" alt="Convidado Especial 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-form">
+        <h2>Confirme sua Presença</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome">
+            <input type="email" placeholder="Seu Email">
+            <button type="submit">Confirmar Presença</button>
+        </form>
+    </section>
+    <script src="./scripts/main.js"></script>
+    
 </body>
 </html>

@@ -1,3 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Fonte+Externa');
+
+/* Estilos gerais */
 body {
-    background-color: red;
+    font-family: 'Fonte Externa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o header (hero) */
+.hero {
+    background-image: url('../images/195161rio-capa-de-evento-do-facebook.svg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+
+    &__title {
+        font-size: 36px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+    }
+}
+
+/* Estilos para a seção de detalhes do evento */
+.event-details {
+    background-color: #f0f0f0;
+    padding: 20px;
+
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.guests {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    img {
+        width: 48%; /* Dividir o espaço igualmente entre as duas imagens */
+        border-radius: 5px;
+    }
+}
+
+/* Estilos para o formulário de registro */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
 }
